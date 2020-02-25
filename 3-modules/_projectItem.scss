@@ -1,0 +1,144 @@
+
+@mixin itemsExtraSmall {
+    .itemp, .item{
+        cursor: pointer;
+        margin-left:0.5rem;
+        margin-right: 0.5rem;
+        font-size: 1.2rem;
+        flex-basis: 7rem;
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #080D0C;
+        height: 4.5rem;
+        border-radius: 5px;
+        &:hover{
+            transition: 0.4s;
+            border: 1px solid rgba($color: #A6401B, $alpha: 1);
+        }
+        z-index: 1;
+    }
+    /*.item{
+        transition: 0.4s;
+        &:hover{
+            border: 1px solid rgba($color: #1F6D8C, $alpha: 0.8) ;
+            background: rgba($color: #A6401B, $alpha: 0.8) ;
+            color: rgba($color: #EEEDEE, $alpha: 0.8) ;
+        }
+    }*/
+    /*.itemp{
+        transition: 0.4s;
+        &:hover{
+            border: 1px solid rgba($color: #1F6D8C, $alpha: 0.8) ;
+            background: rgba($color: #A6401B, $alpha: 0.8) ;
+            color: rgba($color: #EEEDEE, $alpha: 0.8) ;
+        }
+    }*/
+    .itemp1{
+        position: relative;
+        transition: 0.4s;
+        .itemp1Font{
+            transition: 0.4s;
+            color: #EEEDEE;
+        }
+
+    }
+    .itemp1::after{
+        transition: 0.4s;
+        background: url('subpages/img/ziombleIcon.jpg') center center no-repeat;
+        background-size: cover;
+        opacity: 1;
+        content: "";
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;  
+    }
+    .itemp2{
+        position: relative;
+        transition: 0.4s;
+        .itemp1Font{
+            transition: 0.4s;
+            color: #EEEDEE;
+        }
+
+    }
+    .itemp2::after{
+        transition: 0.4s;
+        background: url('subpages/img/animategif.gif') center center no-repeat;
+        background-size: cover;
+        opacity: 1;
+        content: "";
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;  
+    }
+    .itemp1:hover:after{
+        transition: 0.4s;
+        opacity: 0.8;
+    }
+
+    .item2{
+        background: url('subpages/img/ajax.png') center center no-repeat;
+        background-size: cover;
+    }
+    .item4{
+        background: url('subpages/img/fetchApi.png') center center no-repeat;
+        background-size: cover;
+    }
+    .itemFont{
+        transition: 0.4s;
+        color: #080D0C;
+        z-index: 0;
+    }
+}
+
+
+@media (max-height: 619px){
+    @include itemsExtraSmall();
+  }
+  //small
+  @media (min-width: 426px){
+    @include itemsExtraSmall();
+    .itemp, .item{
+        flex-basis: 12rem;
+        border: 1px solid #080D0C;
+        height: 5.5rem;
+        border-radius: 5px;
+    }
+  }
+  //medium
+  @media (min-width: 768px){
+    @include itemsExtraSmall();
+    .itemp, .item{
+        font-size: 1.4rem;
+        flex-basis: 13.5rem;
+        height: 7.5rem;
+    }
+  }  
+  //large
+  @media (min-width: 1024px){
+    @include itemsExtraSmall();
+    .itemp, .item{
+        font-size: 1.6rem;
+        flex-basis: 15rem;
+        height: 7.5rem;
+    }
+  }
+  //extraLarge
+  @media (min-width: 1440px){
+    @include itemsExtraSmall();
+    .itemp, .item{
+        font-size: 1.7rem;
+        flex-basis: 15rem;
+        border: 1px solid #080D0C;
+        height:8.5rem;
+        border-radius: 5px;
+    }
+  }

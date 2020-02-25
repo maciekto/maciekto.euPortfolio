@@ -1,0 +1,61 @@
+@mixin flexCenter($vertical){
+    display: flex;
+    align-items: $vertical;
+    justify-content: center;
+}
+//Front Page background and sizes
+.frontPage{
+    scroll-snap-align: start;
+    font-size: 2rem;
+    width: 100vw;
+    height: 100vh;
+    background: url('img/frontPageMobile.png') center center no-repeat;
+    background-size: cover;
+    //Front page Grid specify
+    .frontPageGrid{
+        @extend .frontPage;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(9,1fr);
+        grid-template-areas:
+        ". . contact"
+        ". . ."
+        ". . ."
+        ". cv ."
+        ". project ."
+        ". . ."
+        ". . ."
+        ". . ."
+        ". arrow ."
+        ;
+        //Grid areas specify
+        .contactBtn{
+            margin-top: 5px;
+            margin-right: 5px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-end;
+            grid-area: contact;
+            font-size: 1.5rem;
+        }
+        .cvBtn{
+            @include flexCenter(flex-end);
+            grid-area: cv;
+        }
+        .projectsBtn{
+            @include flexCenter(flex-end);
+            grid-area: project;
+        }
+        .downArrow{
+            color: white;
+            font-size: 7rem;
+            @include flexCenter(center);
+            grid-area: arrow;
+        }
+    }
+}
+
+ 
+    
+    
+
