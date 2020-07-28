@@ -1,4 +1,4 @@
-# maciejtomaszewskiportfolio
+ maciejtomaszewskiportfolio
 
 ## Project setup
 ```
