@@ -1,14 +1,29 @@
-<template>
-  <div id="app">
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta name="description" content="Junior FrontEnd Developer: PORTFOLIO, CV, INFORMACJE" />
+    <meta name="author" content="Maciej Tomaszewski" />
+    <meta name="keywords" content="junior,frontend,developer,Maciej,Tomaszewski,praca,IT">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tomaszewski Maciej</title>
+    
+    <link rel="stylesheet" href="app.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap" rel="stylesheet">
+</head>
+
+<body>
     <div id="all">
         <div class="frontPage">
             <div class="frontPageGrid">
                 <div class="contactBtn">
-                    <a href="https://www.facebook.com/maciektoto" target="_blank">
+                    <a href="https://www.facebook.com/maciektoto" target="_blank"></a>
                         <div class="linkBtn2">
                             Kontakt
                         </div>
                     </a>
+                    
                 </div>
                 <div class="cvBtn">
                     <a href="download/cvMaciejTomaszewski.pdf" download>
@@ -30,6 +45,7 @@
             </div>
         </div>
         <main class="content">
+            
             <article class="contentAboutme">
                 <section class="component kid" id="kid">
                     <a href="#all">
@@ -37,6 +53,7 @@
                         O mnie
                         </header>
                     </a>
+                    
                     <span class="intro">Hej! Nazywam się Maciej i poszukuje pracy jako<br />
                     <b>Junior Front-End Developer</b>  .
                     </span>
@@ -45,12 +62,13 @@
                         </span>
                         <span class="text">
                             Jako dziecko miałem dużą styczność z komputerami. <br /><br />
+
                             Mając pare lat rozkręcałem je ,a gdy coś się psuło,<br />
-                            razem z mamą szukaliśmy rozwiązania problemu.
+                            razem z mamą szukaliśmy rozwiązania problemu. 
                             <br />
                             <br />
                             To dzięki niej miałem do nich dostęp od <br />
-                            najwcześniejszych lat.
+                            najwcześniejszych lat. 
                         </span>
                     </aside>
                     <a href="#teenager" class="arrow2">
@@ -62,6 +80,7 @@
                 <section class="component teenager" id="teenager">
                     <a class="interactive" href="#kid">
                         <span class="interactive">Powrót wyżej</span>
+                    
                     </a>
                     <aside class="details">
                         <span class="img imgTeenager">
@@ -70,6 +89,7 @@
                         <span class="text teenagerText">
                             Będąc nastolatkiem, aby kontynuować rozwój, <br />
                             gimnazjum wybrałem z profilem <b>mat/inf</b>. <br /><br />
+
                             W 2019 roku ukończyłem
                             technikum informatyczne na<br /> którym poznałem:
                             konstrukcję komputera w pełni,<br />
@@ -78,7 +98,8 @@
                             Architekturę stron internetowych w tym języki:
                             <b>HTML</b>,<br /> <b>CSS</b>, <b>JavaScript</b> i <b>PHP</b>.
                             <br /><br />
-                            W między czasie hobbistycznie używałem programów<br /> Adobe
+
+                            W między czasie hobbistycznie używałem programów<br /> Adobe 
                             takich jak:<br />
                             - Adobe Premiere Pro<br />
                             - <b>Adobe Photoshop</b><br />
@@ -93,9 +114,10 @@
                 <section class="component adult" id="adult">
                     <a class="interactive last" href="#teenager">
                         <span class="interactive">Powrót wyżej</span>
+                    
                     </a>
                     <aside class="details detailsAdult">
-                        <span class="img imgAdult">  <img class="imgAdultClass" src="img/contentAdult.png" alt="Zdjęcie dorosłego.">
+                        <span class="img imgAdult">  <img class="imgAdultClass"src="img/contentAdult.png" alt="Zdjęcie dorosłego.">
                         </span>
                         <span class="text textAdult">
                             Po technikum kontynuuje rozwój w kierunku<br /> technologii,
@@ -108,6 +130,7 @@
                             - Fetch Api<br />
                             - Git, GIthub<br />
                             - obsługa Adobe XD
+                            </span>
                         </span>
                     </aside>
                     <a href="#future" class="arrow2">
@@ -121,11 +144,13 @@
                 <section class="component future" id="future">
                     <a class="interactive last sticky" href="#adult">
                         <span class="interactive ">Powrót wyżej</span>
+                    
                     </a>
                     <aside class="details detailsAdult">
-                        <span class="img imgFuture">  <img class="imgFutureClass" src="img/lightBulb.png" alt="Zdjęcie żarówki.">
+                        <span class="img imgFuture">  <img class="imgFutureClass"src="img/lightBulb.png" alt="Zdjęcie żarówki.">
                         </span>
                         <span class="text textFuture">
+                            
                             <b>W najbliższej przyszłości uczę się: </b><br />
                             - HTML/CSS framework - BootStrap/Materialize<br />
                             - Toolingu <br />
@@ -138,7 +163,8 @@
                             Estetyka > przesada<br />
                             <br />
                             <b>Poszukuję środowiska w którym mógłbym się rozwijać,<br /> a tym samym być wartością dodatnią dla firmy<br /> oraz zespołu w, którym pracuję. </b>
-                          </span>
+                            </span>
+                        </span>
                     </aside>
                     <a href="#footer" class="arrow2">
                         <div class="arrow2">
@@ -165,21 +191,14 @@
                         </div>
                     </a>
                 </footer>
-
+                
             </article>
         </main>
         <a href="#all" class="toTheTop">
                 &#8673;
         </a>
-
+            
     </div>
-  </div>
-</template>
-
-<style lang="scss">
-  /* USING MIXIN IN MEDIA QUERIES FOR PRACTICE */
-
-  @import "3-modules/_modules-dir";
-  @import '1-base/base-dir';
-  @import '2-layouts/layout-dir';
-</style>
+    <script src="main.js"></script>
+</body>
+</html>

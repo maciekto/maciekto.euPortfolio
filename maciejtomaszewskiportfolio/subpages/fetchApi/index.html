@@ -1,0 +1,45 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>get, and post text and JSON file - FetchApi</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+</head>
+
+<body>
+    <h2>get, and post text JSON file - FetchApi</h2>
+    <div class="textfile">
+        <button class="button">Get text data</button>  
+            <div id="data"></div>
+            <div class="success"></div>    
+    </div>
+    <br><br>
+    <div class="jsonFileGet">
+        <button class="buttonJsonGet">Get json data</button>  
+            <div id="dataJsonGet"></div>
+            <div class="success"></div>    
+    </div>
+    <br />
+    <br />
+    <fieldset style="width: 250px;">
+        <legend> POST json with Fetch Api</legend>
+        <form class="postSend">
+            <div>
+                <input type="text" id="title" placeholder="title">
+            </div>
+            <div>
+                <textarea name="body" id="body" cols="30" rows="10" placeholder="body"></textarea>
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+    </fieldset>
+
+        
+    <div class="result"></div>
+    <script src="main.js"></script>
+</body>
+
+</html>
